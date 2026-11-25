@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - NokiaCam</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: #ffffff;
+    }
+    h1, h2 { color: #111; }
+    h1 { border-bottom: 1px solid #eaeaea; padding-bottom: 12px; }
+    h2 { margin-top: 28px; font-size: 1.25rem; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    a { color: #3268ba; }
+    footer { margin-top: 48px; font-size: 0.9em; color: #666; border-top: 1px solid #eaeaea; padding-top: 16px; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy for NokiaCam</h1>
+  <p><em>Last updated: November 25, 2026</em></p>
+
+  <p>NokiaCam ("the App", package <code>hu.xtn.nokiacam</code>) is developed by DipaStudio. NokiaCam is a private, personal camera viewer: it connects to a self-hosted "hub" server that you configure yourself, shows the live camera feed of a phone, and lets you browse and export the photos and time-lapse frames stored on that hub. The App is distributed only through Google Play closed testing to a small group of invited family members and is not offered to the general public.</p>
+
+  <h2>1. Information We Collect and How It Is Used</h2>
+  <p>DipaStudio does not operate any server that receives your data. The App talks only to the hub server whose address you enter in the App's settings:</p>
+  <ul>
+    <li><strong>Server address and access key:</strong> The hub URL and the access key you type in Settings are stored locally in the App's private preferences on your device. They are sent only to that hub as the <code>Authorization</code> header and are never sent anywhere else.</li>
+    <li><strong>Camera images and videos:</strong> The App downloads live preview frames, photos, and time-lapse frames from your hub so you can view them. Downloaded images are cached in the App's private cache directory on your device (up to roughly 400 MB, oldest files removed first).</li>
+    <li><strong>Actions you request:</strong> When you ask the App to take a photo or change a camera setting, it sends that request to your hub. The hub, not the App, stores the resulting photos.</li>
+    <li><strong>Exports:</strong> If you export a photo or build a time-lapse video, the file is saved to your device's gallery under <code>Movies/NokiaCam</code> or <code>Pictures</code>. Nothing is uploaded.</li>
+  </ul>
+  <p>NokiaCam contains no advertisements, no advertising identifiers, no third-party analytics SDKs, and no crash-reporting SDKs. It does not collect your location, contacts, or any device identifier.</p>
+
+  <h2>2. Local Data Storage and Security</h2>
+  <ul>
+    <li>The server address, access key, and last known role (viewer or administrator) are stored in the App's private <code>SharedPreferences</code>.</li>
+    <li>Downloaded images are kept in the App's private cache directory and may be removed by Android at any time.</li>
+    <li>Android cloud backup is disabled for the App, so its preferences are not copied to Google's servers.</li>
+    <li>All communication between the App and your hub uses HTTPS (and WSS for the live stream) when your hub is configured with TLS.</li>
+  </ul>
+
+  <h2>3. Third-Party Services</h2>
+  <p>The App does not integrate any third-party analytics, advertising, or account services. It uses only standard Android and AndroidX libraries, including AndroidX Media3 for playing the live HLS stream. Any data your hub exposes is controlled entirely by you and by whoever operates that server.</p>
+
+  <h2>4. Permissions</h2>
+  <ul>
+    <li><strong>Internet:</strong> Required to reach your hub, load the live stream, and download pictures.</li>
+  </ul>
+  <p>No camera, microphone, storage, or location permission is requested by the App.</p>
+
+  <h2 id="data-deletion">5. Data Retention and Deletion</h2>
+  <ul>
+    <li><strong>On your device:</strong> You can clear the image cache in Android Settings &rarr; Apps &rarr; NokiaCam &rarr; Storage, or uninstall the App to remove all locally stored data, including the saved server address and access key.</li>
+    <li><strong>On your hub:</strong> Photos, videos, and settings stored on the hub are managed by the hub's operator. Delete them through your hub's own interface or by removing the files from the server.</li>
+    <li><strong>No developer-held data:</strong> DipaStudio keeps no copy of your images, access keys, or personal data, so there is nothing for us to delete on our side.</li>
+  </ul>
+
+  <h2>6. Children's Privacy</h2>
+  <p>NokiaCam is a private tool intended for the developer's family and is not directed to children under the age of 13. DipaStudio does not knowingly collect personal data from children through this App.</p>
+
+  <h2>7. Changes to This Policy</h2>
+  <p>If this privacy policy changes, the updated version will be posted on this page with a new "Last updated" date.</p>
+
+  <h2>8. Contact Information</h2>
+  <p>If you have any questions about this Privacy Policy, please contact:</p>
+  <p>
+    <strong>Developer:</strong> DipaStudio<br>
+    <strong>Email:</strong> <a href="mailto:dupen210@gmail.com">dupen210@gmail.com</a>
+  </p>
+
+  <footer>
+    <p>&copy; 2026 DipaStudio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
